@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EncapsulateWhatVarient")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+909bf40e50a1c42c36b0bc669dd54e3da42de553")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e83dbc93f0f1c7396c879545eb3e9da2b09270b")]
 [assembly: System.Reflection.AssemblyProductAttribute("EncapsulateWhatVarient")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EncapsulateWhatVarient")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
