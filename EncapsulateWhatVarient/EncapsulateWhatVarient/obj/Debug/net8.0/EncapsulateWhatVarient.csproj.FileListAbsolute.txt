@@ -1,0 +1,15 @@
+E:\BackEnd Developer\SolidPriciples_EngEssam\EncapsulateWhatVarient\EncapsulateWhatVarient\bin\Debug\net8.0\EncapsulateWhatVarient.exe
+E:\BackEnd Developer\SolidPriciples_EngEssam\EncapsulateWhatVarient\EncapsulateWhatVarient\bin\Debug\net8.0\EncapsulateWhatVarient.deps.json
+E:\BackEnd Developer\SolidPriciples_EngEssam\EncapsulateWhatVarient\EncapsulateWhatVarient\bin\Debug\net8.0\EncapsulateWhatVarient.runtimeconfig.json
+E:\BackEnd Developer\SolidPriciples_EngEssam\EncapsulateWhatVarient\EncapsulateWhatVarient\bin\Debug\net8.0\EncapsulateWhatVarient.dll
+E:\BackEnd Developer\SolidPriciples_EngEssam\EncapsulateWhatVarient\EncapsulateWhatVarient\bin\Debug\net8.0\EncapsulateWhatVarient.pdb
+E:\BackEnd Developer\SolidPriciples_EngEssam\EncapsulateWhatVarient\EncapsulateWhatVarient\obj\Debug\net8.0\EncapsulateWhatVarient.GeneratedMSBuildEditorConfig.editorconfig
+E:\BackEnd Developer\SolidPriciples_EngEssam\EncapsulateWhatVarient\EncapsulateWhatVarient\obj\Debug\net8.0\EncapsulateWhatVarient.AssemblyInfoInputs.cache
+E:\BackEnd Developer\SolidPriciples_EngEssam\EncapsulateWhatVarient\EncapsulateWhatVarient\obj\Debug\net8.0\EncapsulateWhatVarient.AssemblyInfo.cs
+E:\BackEnd Developer\SolidPriciples_EngEssam\EncapsulateWhatVarient\EncapsulateWhatVarient\obj\Debug\net8.0\EncapsulateWhatVarient.csproj.CoreCompileInputs.cache
+E:\BackEnd Developer\SolidPriciples_EngEssam\EncapsulateWhatVarient\EncapsulateWhatVarient\obj\Debug\net8.0\EncapsulateWhatVarient.sourcelink.json
+E:\BackEnd Developer\SolidPriciples_EngEssam\EncapsulateWhatVarient\EncapsulateWhatVarient\obj\Debug\net8.0\EncapsulateWhatVarient.dll
+E:\BackEnd Developer\SolidPriciples_EngEssam\EncapsulateWhatVarient\EncapsulateWhatVarient\obj\Debug\net8.0\refint\EncapsulateWhatVarient.dll
+E:\BackEnd Developer\SolidPriciples_EngEssam\EncapsulateWhatVarient\EncapsulateWhatVarient\obj\Debug\net8.0\EncapsulateWhatVarient.pdb
+E:\BackEnd Developer\SolidPriciples_EngEssam\EncapsulateWhatVarient\EncapsulateWhatVarient\obj\Debug\net8.0\EncapsulateWhatVarient.genruntimeconfig.cache
+E:\BackEnd Developer\SolidPriciples_EngEssam\EncapsulateWhatVarient\EncapsulateWhatVarient\obj\Debug\net8.0\ref\EncapsulateWhatVarient.dll

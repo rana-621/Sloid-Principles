@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-
+            Pizza pizza = Pizza.Order("CheesePizza");
+            Console.WriteLine(pizza);
         }
     }
 
@@ -26,6 +27,15 @@
             return pizza;
         }
 
+        public static Pizza Order(string type)
+        {
+            Pizza pizza = Create(type);
+            Prepare();
+            Cook();
+            Cut();
+
+            return pizza;
+        }
         private static void Prepare()
         {
             Console.WriteLine("Preparing...");
