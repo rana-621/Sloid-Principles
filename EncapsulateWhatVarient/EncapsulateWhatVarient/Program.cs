@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Pizza pizza = Pizza.Order("CheesePizza");
+            Pizza pizza = Pizza.Order(PizzaConstants.CheesePizza);
             Console.WriteLine(pizza);
         }
     }
