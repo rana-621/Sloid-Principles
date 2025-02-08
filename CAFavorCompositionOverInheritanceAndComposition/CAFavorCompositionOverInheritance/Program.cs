@@ -4,6 +4,23 @@
     {
         static void Main(string[] args)
         {
+            var choice = 0;
+            do
+            {
+                Console.Clear();
+                choice = ReadChoice(choice);
+                if (choice >= 1 && choice <= 3)
+                {
+                    var pizza = CreatePizza(choice);
+                    Console.WriteLine(pizza);
+                    Console.WriteLine("Press Key to continue");
+                }
+                else
+                {
+                    Console.WriteLine("Invalid choice");
+                }
+                Console.ReadKey();
+            } while (choice != 0);
         }
 
         private static int ReadChoice(int choice)
