@@ -1,6 +1,6 @@
 ﻿namespace CAFavorCompositionOverInheritance
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
@@ -13,11 +13,7 @@
                 {
                     var pizza = CreatePizza(choice);
                     Console.WriteLine(pizza);
-                    Console.WriteLine("Press Key to continue");
-                }
-                else
-                {
-                    Console.WriteLine("Invalid choice");
+                    Console.WriteLine("Press any key to continue");
                 }
                 Console.ReadKey();
             } while (choice != 0);
@@ -25,19 +21,19 @@
 
         private static int ReadChoice(int choice)
         {
-            Console.WriteLine("Today's menu : ");
-            Console.WriteLine("----------------");
-            Console.WriteLine("1. Chicken ");
-            Console.WriteLine("2. Vegeterain ");
-            Console.WriteLine("3. Mexican ");
-            Console.WriteLine("What is your order that you want to add : ");
+            Console.WriteLine("Today's Menu");
+            Console.WriteLine("------------");
+            Console.WriteLine("1. Chicken");
+            Console.WriteLine("2. Vegeterian");
+            Console.WriteLine("3. Mexican");
+            Console.WriteLine("what is your order: ");
             if (int.TryParse(Console.ReadLine(), out int ch))
             {
                 choice = ch;
             }
+
             return choice;
         }
-
 
         private static Pizza CreatePizza(int choice)
         {
@@ -45,45 +41,48 @@
             switch (choice)
             {
                 case 1:
-                    pizza = new Mexican();
-                    break;
-                case 2:
                     pizza = new Chicken();
                     break;
+                case 2:
+                    pizza = new Vegeterian();
+                    break;
                 case 3:
-                    pizza = new Vegeterain();
+                    pizza = new Mexican();
                     break;
                 default:
                     break;
             }
             return pizza;
         }
+    }
 
-        class Pizza
-        {
-            public virtual string Title => $"{nameof(Title)}";
-            public virtual decimal Price => 10m;
-            public override string ToString()
-            {
-                return $"{Title} - {Price.ToString("C")}";
-            }
-        }
-        class Mexican : Pizza
-        {
-            public override string Title => $"{base.Title}{nameof(Mexican)}";
-            public override decimal Price => base.Price + 15m;
-        }
+    class Pizza
+    {
+        public virtual string Title => $"{nameof(Pizza)}";
+        public virtual decimal Price => 10m;
 
-        class Chicken : Pizza
+        public override string ToString()
         {
-            public override string Title => $"{base.Title}{nameof(Chicken)}";
-            public override decimal Price => base.Price + 5m;
-        }
-        class Vegeterain : Pizza
-        {
-            public override string Title => $"{base.Title}{nameof(Vegeterain)}";
-            public override decimal Price => base.Price + 9m;
+            return $"\n{Title}" +
+                   $"\n\tPrice: {Price.ToString("C")}";
         }
     }
 
+    class Mexican : Pizza
+    {
+        public override string Title => $"{base.Title} {nameof(Mexican)}"; // Pizza Cheese
+        public override decimal Price => base.Price + 3m;
+    }
+
+    class Chicken : Pizza
+    {
+        public override string Title => $"{base.Title} {nameof(Chicken)}"; // Pizza Cheese
+        public override decimal Price => base.Price + 6m;
+    }
+
+    class Vegeterian : Pizza
+    {
+        public override string Title => $"{base.Title} {nameof(Vegeterian)}"; // Pizza Cheese
+        public override decimal Price => base.Price + 4m;
+    }
 }
