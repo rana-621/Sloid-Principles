@@ -6,6 +6,21 @@
         {
         }
 
+        private static int ReadChoice(int choice)
+        {
+            Console.WriteLine("Today's menu : ");
+            Console.WriteLine("----------------");
+            Console.WriteLine("1. Chicken ");
+            Console.WriteLine("2. Vegeterain ");
+            Console.WriteLine("3. Mexican ");
+            Console.WriteLine("What is your order that you want to add : ");
+            if (int.TryParse(Console.ReadLine(), out int ch))
+            {
+                choice = ch;
+            }
+            return choice;
+        }
+
 
         private static Pizza CreatePizza(int choice)
         {
