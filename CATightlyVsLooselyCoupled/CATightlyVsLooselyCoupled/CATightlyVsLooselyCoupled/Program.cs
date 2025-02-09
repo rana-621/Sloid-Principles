@@ -4,14 +4,38 @@
     {
         static void Main(string[] args)
         {
-            NotificationService notificationService = new NotificationService(new EmailService());
+            var serviceFactory = NotificationFactory.Create(NotificationMode.Weird);
+            //NotificationService notificationService = new NotificationService(new EmailService());
+            NotificationService notificationService = new NotificationService(serviceFactory);
             notificationService.Notify();
             Console.ReadKey();
         }
     }
 
+    class NotificationFactory
+    {
+        public static INotificationMode Create(NotificationMode notificationMode)
+        {
+            switch (notificationMode)
+            {
+                case NotificationMode.Email:
+                    return new EmailService();
+                case NotificationMode.SMS:
+                    return new SmsService();
+                case NotificationMode.Weird:
+                    return new WeirdService();
+                default:
+                    return new EmailService();
+            }
+        }
+    }
 
-
+    enum NotificationMode
+    {
+        Email,
+        SMS,
+        Weird
+    }
     interface INotificationMode
     {
         void Send();
