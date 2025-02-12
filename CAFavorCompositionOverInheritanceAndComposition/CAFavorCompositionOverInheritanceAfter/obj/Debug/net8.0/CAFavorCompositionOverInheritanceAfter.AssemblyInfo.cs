@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CAFavorCompositionOverInheritanceAfter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7129ab1f02883c90c224d470fd0710030b28635e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6c68e5cd5ae74019fdf3dce65413f338c2043081")]
 [assembly: System.Reflection.AssemblyProductAttribute("CAFavorCompositionOverInheritanceAfter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CAFavorCompositionOverInheritanceAfter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
