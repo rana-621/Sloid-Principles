@@ -1,6 +1,37 @@
 ﻿namespace SOLID.ISP
 {
-    abstract class Staff
+    class Staff : Employee, IEntitlement
     {
+        public decimal CalculateBonuses() => Salary * 0.05m;
+
+        public decimal CalculateHealthInsurance() => 300m;
+
+        public decimal CalculatePension() => .025m * Salary;
+        public decimal CalculateRentalSubsidy() => 150;
+        public decimal CalculateTransportationRimbursement() => throw new NotSupportedException("consultant employee not supported ");
+
+
+        public override string PrintSalarySlip()
+        {
+            return $"\n -- {nameof(Consultant)}--" +
+                $"\n NO. {EmployeeNO} " +
+                $"\n Name: {Name} " +
+                $"\n Basic Salary: {Salary.ToString("C2")} " +
+                $"\n Bonuses: {CalculateBonuses().ToString("C2")} " +
+                $"\n Health Insurance: {CalculateHealthInsurance().ToString("C2")} " +
+                $"\n Transportation Reimbursement: {CalculateTransportationRimbursement().ToString("C2")} " +
+                $"\n ----------------------------------------" +
+                $"\n Net Salary: {CalculateNetSalary().ToString("C2")} ";
+
+        }
+
+        protected override decimal CalculateNetSalary()
+        {
+            return Salary
+                + CalculateBonuses()
+                + CalculateHealthInsurance()
+                + CalculatePension()
+                + CalculateRentalSubsidy();
+        }
     }
 }
