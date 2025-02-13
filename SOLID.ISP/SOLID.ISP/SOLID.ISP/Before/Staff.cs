@@ -1,4 +1,4 @@
-﻿namespace SOLID.ISP
+﻿namespace SOLID.ISP.Before
 {
     class Staff : Employee, IEntitlement
     {
