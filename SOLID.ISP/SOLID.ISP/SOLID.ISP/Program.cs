@@ -4,7 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var employees = Before.Repository.LoadEmployees();
+            foreach (var employee in employees)
+            {
+                System.Console.WriteLine(employee.PrintSalarySlip());
+                Console.WriteLine();
+            }
         }
     }
 }

@@ -13,16 +13,16 @@
 
         public override string PrintSalarySlip()
         {
-            return $"\n -- {nameof(Consultant)}--" +
-                $"\n NO. {EmployeeNO} " +
-                $"\n Name: {Name} " +
-                $"\n Basic Salary: {Salary.ToString("C2")} " +
-                $"\n Bonuses: {CalculateBonuses().ToString("C2")} " +
-                $"\n Health Insurance: {CalculateHealthInsurance().ToString("C2")} " +
-                $"\n Transportation Reimbursement: {CalculateTransportationRimbursement().ToString("C2")} " +
-                $"\n ----------------------------------------" +
-                $"\n Net Salary: {CalculateNetSalary().ToString("C2")} ";
-
+            return $"\n --- {nameof(Staff)} ---" +
+               $"\n  No.: {EmployeeNO}" +
+               $"\n  Name: {Name}" +
+               $"\n  Basic Salary: {Salary.ToString("C2")}" +
+               $"\n  Bonuses: {CalculateBonuses().ToString("C2")}" +
+               $"\n  Pension: {CalculatePension().ToString("C2")}" +
+               $"\n  Health Insurance: {CalculateHealthInsurance().ToString("C2")}" +
+               $"\n  Rental Subsidy: {CalculateRentalSubsidy().ToString("C2")}" +
+               $"\n  ----------------------------------------------" +
+               $"\n  NetSalary: {CalculateNetSalary().ToString("C2")}";
         }
 
         protected override decimal CalculateNetSalary()
